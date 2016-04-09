@@ -1,20 +1,27 @@
-package cs1302.p2;
+package main.java.cs1302.p2;
 
-import cs1302.effects.Artsy;
+import main.java.cs1302.effects.Artsy;
 
 import javafx.application.Application;
+import javafx.event.EventHandler;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javafx.scene.Scene;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.*;
 import javafx.scene.control.*;
+import javafx.scene.input.KeyEvent;
 
 /**
  * This is the driver for this application.
  */
 public class Driver extends Application {
 
+	static String bull = "UPUPDOWNDOWNLEFTRIGHTLEFTRIGHTBA";
+    static String shit = "";
+	
     @Override
     public void start(Stage stage) {
 
@@ -34,6 +41,28 @@ public class Driver extends Application {
         
         stage.sizeToScene();
         
+        root.setOnKeyPressed(new EventHandler<KeyEvent>(){
+
+			@Override
+			public void handle(KeyEvent event) {
+				
+				shit+=event.getCode();
+				//System.out.println(shit);
+				if(shit.toLowerCase().contains(bull.toLowerCase())){
+		        	//System.out.println("Penis");
+		        	shit="";
+		        	Stage about = new Stage(StageStyle.UTILITY);
+	                GrumpyCat grumpycat = new GrumpyCat();
+	                Scene scene = new Scene(grumpycat);
+	                about.setScene(scene);
+	                about.setTitle("GIMME TEH BONUS POINTS PLS");
+	                about.initModality(Modality.APPLICATION_MODAL);
+	                about.show();
+				}//if
+				
+			}//handle
+        	
+        });//key press events
         
         stage.show();
         
