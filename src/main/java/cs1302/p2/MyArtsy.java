@@ -1,6 +1,6 @@
 package main.java.cs1302.p2;
 
-import main.java.cs1302.artsy.Artsy;
+import main.java.cs1302.effects.Artsy;
 import javafx.scene.image.Image;
 import javafx.scene.image.PixelReader;
 import javafx.scene.image.PixelWriter;
@@ -63,7 +63,9 @@ public class MyArtsy implements Artsy {
 
 			for(int x=0;x<width;++x){
 				for (int y=0;y<height;++y){
-					pw.setArgb((int)(x*Math.cos(Math.toRadians(degrees)-y*Math.sin(Math.toRadians(degrees)))), (int)(x*Math.sin(Math.toRadians(degrees)+y*Math.cos(Math.toRadians(degrees)))), pr.getArgb(x,y));
+					if((int)(x*Math.cos(Math.toRadians(degrees)-y*Math.sin(Math.toRadians(degrees))))>=0&&(int)(x*Math.cos(Math.toRadians(degrees)-y*Math.sin(Math.toRadians(degrees))))<=300&&(int)(x*Math.sin(Math.toRadians(degrees)+y*Math.cos(Math.toRadians(degrees))))>=0&&(int)(x*Math.sin(Math.toRadians(degrees)+y*Math.cos(Math.toRadians(degrees))))<=300){
+						pw.setArgb((int)(x*Math.cos(Math.toRadians(degrees)-y*Math.sin(Math.toRadians(degrees)))), (int)(x*Math.sin(Math.toRadians(degrees)+y*Math.cos(Math.toRadians(degrees)))), pr.getArgb(x,y));
+					}
 				}
 			}
 			
