@@ -1,6 +1,6 @@
-package main.java.cs1302.p2;
+package cs1302.p2;
 
-import main.java.cs1302.effects.Artsy;
+import cs1302.effects.Artsy;
 
 import javafx.application.Application;
 import javafx.event.EventHandler;
@@ -26,12 +26,12 @@ public class Driver extends Application {
     public void start(Stage stage) {
 
         VBox root = new VBox(8);
-        FilterBox filt = new FilterBox();
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.setTitle("Artsy!");
         
         ImgPane imgpain = new ImgPane();
+        FilterBox filt = new FilterBox(imgpain);
         MainMenu m = new MainMenu(stage,imgpain);
         
         

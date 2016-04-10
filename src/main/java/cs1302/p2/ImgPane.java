@@ -41,6 +41,7 @@ public class ImgPane extends BorderPane{
          def = new Image(input);
          for(int i=0;i<3;i++){
             imgarr[i] = def;
+            altered[i] = def;
             imgvi[i].setImage(def);
             setMargin(lilboxes[i],padding);
             setAlignment(lilboxes[i],Pos.CENTER);
@@ -64,12 +65,11 @@ public class ImgPane extends BorderPane{
    public void changeImg(File file, int ID){
       try{
          input = new FileInputStream(file.getPath());
-         imgarr[ID] = new Image(input);
+         Image thing = new Image(input);
+         imgarr[ID] = thing;
+         altered[ID] = thing;
          imgvi[ID].setImage(imgarr[ID]);
-         imgvi[ID].setFitWidth(300);
-         imgvi[ID].setFitHeight(300);
-         int i = file.getPath().lastIndexOf("\\") + 1;
-         labels[ID].setText("Image 1: " + file.getPath().substring(i,file.getPath().length()));
+         labels[ID].setText("Image " + (ID+1) + ": " + file.getName());
       }
       catch(FileNotFoundException i){
          i.printStackTrace();
@@ -84,7 +84,12 @@ public class ImgPane extends BorderPane{
       imgvi[ID].setImage(altered[ID]);
    }//changeImg, changes displayed image as altered image
    
-   public Image getImage(int ID){
-      return imgarr[ID];
+   public Image getImg(int ID){
+      return altered[ID];
+   }
+   
+   public void resetImg(int ID){
+      altered[ID] = imgarr[ID];
+      imgvi[ID].setImage(imgarr[ID]);
    }
 }

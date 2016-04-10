@@ -1,4 +1,4 @@
-package main.java.cs1302.p2;
+package cs1302.p2;
 
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
