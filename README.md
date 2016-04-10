@@ -2,7 +2,7 @@
 # CSCI 1302 - Artsy Project (cs1302-artsy)
 <b>Nathan Su</b> | 811342394 | nws44361@uga.edu  
 <b>Trinity Key</b> | 811890405 | trinity.key25@uga.edu
-[The Grumpy Cat thing works (<code>↑</code><code>↑</code><code>↓</code><code>↓</code><code>←</code><code>→</code><code>←</code><code>→</code><code>B</code><code>A</code>)
+<b>[The Grumpy Cat thing works (<code>↑</code><code>↑</code><code>↓</code><code>↓</code><code>←</code><code>→</code><code>←</code><code>→</code><code>B</code><code>A</code>)</b>
 
 
 This repository contains the skeleton code for the Art project assigned
