@@ -63,8 +63,10 @@ public class MyArtsy implements Artsy {
 
 			for(int x=0;x<width;++x){
 				for (int y=0;y<height;++y){
-					if((int)(x*Math.cos(Math.toRadians(degrees)-y*Math.sin(Math.toRadians(degrees))))>=0&&(int)(x*Math.cos(Math.toRadians(degrees)-y*Math.sin(Math.toRadians(degrees))))<=300&&(int)(x*Math.sin(Math.toRadians(degrees)+y*Math.cos(Math.toRadians(degrees))))>=0&&(int)(x*Math.sin(Math.toRadians(degrees)+y*Math.cos(Math.toRadians(degrees))))<=300){
-						pw.setArgb((int)(x*Math.cos(Math.toRadians(degrees)-y*Math.sin(Math.toRadians(degrees)))), (int)(x*Math.sin(Math.toRadians(degrees)+y*Math.cos(Math.toRadians(degrees)))), pr.getArgb(x,y));
+					int xx = (int)(x*Math.cos(Math.toRadians(degrees))-y*Math.sin(Math.toRadians(degrees)));
+					int yy = (int)(x*Math.sin(Math.toRadians(degrees))+y*Math.cos(Math.toRadians(degrees)));
+					if(xx>=0&&xx<=300&&yy>=0&&yy<=300){
+						pw.setArgb(xx, yy, pr.getArgb(x,y));
 					}
 				}
 			}
