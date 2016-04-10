@@ -3,8 +3,8 @@
 <b>Nathan Su</b> | 811342394 | nws44361@uga.edu  
 <b>Trinity Key</b> | 811890405 | trinity.key25@uga.edu
 
-<b>[The Grumpy Cat thing works (<code>↑</code><code>↑</code><code>↓</code><code>↓</code><code>←</code><code>→</code><code>←</code><code>→</code><code>B</code><code>A</code>)</b>
-<b>The user can pull images locally and via url<b/>
+<b>Extra Credit 1 [The Grumpy Cat thing works (<code>↑</code><code>↑</code><code>↓</code><code>↓</code><code>←</code><code>→</code><code>←</code><code>→</code><code>B</code><code>A</code>)</b>
+<b>Extra Credit 2The user can pull images locally and via url<b/>
 
 
 This repository contains the skeleton code for the Art project assigned
