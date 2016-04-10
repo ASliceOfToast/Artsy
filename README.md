@@ -1,4 +1,7 @@
+<div align = "center">
 # CSCI 1302 - Artsy Project (cs1302-artsy)
+<b>Nathan Su</b> | 811342394 | nws44361@uga.edu  
+<b>Trinity Key</b> | 811890405 | trinity.key25@uga.edu
 
 This repository contains the skeleton code for the Art project assigned
 to the students in the Spring 2016 CSCI 1302 classes at the 
