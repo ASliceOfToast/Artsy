@@ -1,6 +1,6 @@
-package cs1302.p2;
+package main.java.cs1302.p2;
 
-import cs1302.effects.Artsy;
+import main.java.cs1302.effects.Artsy;
 import javafx.scene.image.Image;
 import javafx.scene.image.PixelReader;
 import javafx.scene.image.PixelWriter;
@@ -9,6 +9,11 @@ import javafx.scene.paint.Color;
 
 public class MyArtsy implements Artsy {
 
+	/*
+	 * (non-Javadoc)
+	 * @see main.java.cs1302.effects.Artsy#doCheckers(javafx.scene.image.Image, javafx.scene.image.Image, int)
+	 */
+	
     @Override
     public Image doCheckers(Image src1, Image src2, int size) {
     	int width = (int) src1.getWidth();
@@ -31,6 +36,10 @@ public class MyArtsy implements Artsy {
 	return ret;
     } // doCheckers
 
+    /*
+     * (non-Javadoc)
+     * @see main.java.cs1302.effects.Artsy#doHorizontalStripes(javafx.scene.image.Image, javafx.scene.image.Image, int)
+     */
     @Override
     public Image doHorizontalStripes(Image src1, Image src2, int size) {
     	int width = (int) src1.getWidth();
@@ -62,8 +71,12 @@ public class MyArtsy implements Artsy {
 	return ret;
     } // doHorizontalStripes
 
-
-@Override
+   /*
+    * (non-Javadoc)
+    * @see main.java.cs1302.effects.Artsy#doRotate(javafx.scene.image.Image, double)
+    */
+   
+   @Override
    public Image doRotate(Image src, double degrees) {
 	   int width = (int) src.getWidth();
 	   int height = (int) src.getHeight();
@@ -174,7 +187,10 @@ public class MyArtsy implements Artsy {
     
     
     
-    
+    /*
+     * (non-Javadoc)
+     * @see main.java.cs1302.effects.Artsy#doVerticalStripes(javafx.scene.image.Image, javafx.scene.image.Image, int)
+     */
     @Override
     public Image doVerticalStripes(Image src1, Image src2, int size) {
     	int width = (int) src1.getWidth();

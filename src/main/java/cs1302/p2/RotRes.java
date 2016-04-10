@@ -1,4 +1,4 @@
-package cs1302.p2;
+package main.java.cs1302.p2;
 
 import javafx.scene.layout.HBox;
 import javafx.scene.control.Button;
@@ -7,6 +7,10 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import java.util.NoSuchElementException;
 
+/*
+ * Creates an Hbox that has buttons allowing the user to rotate and reset
+ * the images in each pane.
+ */
 public class RotRes extends HBox{
    int id;
    Button rotate = new Button("Rotate");

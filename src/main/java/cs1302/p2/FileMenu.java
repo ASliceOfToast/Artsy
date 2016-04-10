@@ -1,4 +1,4 @@
-package cs1302.p2;
+package main.java.cs1302.p2;
 
 import javafx.scene.control.*;
 import javafx.application.Platform;

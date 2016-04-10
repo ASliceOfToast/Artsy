@@ -1,6 +1,6 @@
-package cs1302.p2;
+package main.java.cs1302.p2;
 
-import cs1302.effects.Artsy;
+import main.java.cs1302.effects.Artsy;
 
 import javafx.application.Application;
 import javafx.event.EventHandler;
@@ -41,6 +41,12 @@ public class Driver extends Application {
         
         stage.sizeToScene();
         
+        
+        /*
+         * Creates an event listener that monitors keypresses and 
+         * creates a window containing Grumpy Cat if the Konami code
+         * is entered.
+         */
         root.setOnKeyPressed(new EventHandler<KeyEvent>(){
 
 			@Override
@@ -68,6 +74,9 @@ public class Driver extends Application {
         
     } // createAndShowGUI
 
+    /*
+     * Launches application
+     */
     public static void main(String[] args) {
         launch(args);
     } // main

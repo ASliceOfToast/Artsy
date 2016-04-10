@@ -1,4 +1,4 @@
-package cs1302.p2;
+package main.java.cs1302.p2;
 
 import javafx.scene.control.*;
 import javafx.scene.Scene;
@@ -14,6 +14,9 @@ FileChooser chooser = new FileChooser();
 File img1f;
 File img2f;
 
+/*
+ * Populates the menu with open image options for image 1 and image 2.
+ */
 
 public OpenShitMenu(Stage scream,ImgPane imgpain){
    super("Open");

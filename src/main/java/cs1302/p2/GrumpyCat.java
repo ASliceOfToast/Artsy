@@ -1,4 +1,4 @@
-package cs1302.p2;
+package main.java.cs1302.p2;
 
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
@@ -9,6 +9,11 @@ import javafx.scene.text.FontPosture;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
+
+/*
+ * Creates a window containing only the Grumpy Cat image.
+ * The image is pulled from imgur rather than the resources folder.
+ */
 
 public class GrumpyCat extends BorderPane {
 
